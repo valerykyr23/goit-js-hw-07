@@ -7,7 +7,7 @@ const list = document.querySelector(".gallery");
 
 
 
-// const markup = galleryItems.reduce((acc, { preview,description }) => acc + `<li><img src="${preview}"  alt="${description}" ></li>`, "");
+
 const markup = galleryItems.map(({original,preview,description} )=> `<a class="gallery__link" href="${original}">
     <img
       class="gallery__image"
